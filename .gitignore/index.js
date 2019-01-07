@@ -384,6 +384,17 @@ bot.on('message', message => {
         console.log("Commande Help demandée !");
     
     }
+    
+        if (message.content === prefix + `Dryssix`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__OpTium Dryssix__" , "Chef de la OpTium et youtubeur, formidable ; Non ? \n       \n Twitter → @dryssix \n          ")
+            .setFooter("Copyright 2018 © OpTium eSport")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
 
     if (message.content === prefix + `Kylor`){
         var help_embed = new Discord.RichEmbed()
