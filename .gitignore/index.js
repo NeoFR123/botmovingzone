@@ -374,6 +374,50 @@ bot.on('message', message => {
     
     }
 
+    if (message.content === prefix + `Louis`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__OpTium Louis__" , "Il a __13 ans__ et accompli déjà de **haute** performances ! \n       \n Twitter → @ProchLouis")
+            .setFooter("Copyright 2018 © OpTium eSport")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
+    if (message.content === prefix + `Kylor`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__OpTium Kylor__" , "Bon en mécanique, mais son aim reste à désirer ! \n        \n Twitter → @OT_KYLOR")
+            .setFooter("Copyright 2018 © OpTium eSport")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
+    if (message.content === prefix + `Jules`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__OpTium Jules__" , "Rapide et efficace. Duo de Louis à deux ils sont des monstres ! \n       \n Snap → este.lcm")
+            .setFooter("Copyright 2018 © OpTium eSport")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
+    if (message.content === prefix + `OpTium`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__Réseaux Sociaux__" , "/Louis \n /Jules \n /Kylor")
+            .setFooter("Copyright 2018 © OpTium eSport")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
 
     if (!message.content.startsWith(prefix)) return;
 
