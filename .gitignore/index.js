@@ -421,7 +421,7 @@ bot.on('message', message => {
     if (message.content === prefix + `OpTium`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__Réseaux Sociaux__" , "/Louis \n /Jules \n /Kylor")
+            .addField("__Réseaux Sociaux__" , "**/**Louis \n **/**Jules \n **/**Kylor \n **/**Dryssix \n        ")
             .setFooter("Copyright 2018 © OpTium eSport")
         message.channel.sendEmbed(help_embed);
         //messagechannel
