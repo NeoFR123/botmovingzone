@@ -35,7 +35,7 @@ bot.on('message', message => {
     if (message.member.hasPermission("MANAGE_MESSAGES"))
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__Staff Aide__" , "**Voici les commandes utile pour les __MovingZone__ !**\n /classement \n /start \n /start-18h00 \n /start-18h15 \n /start-18h30 \n /start-18h45 \n /start-19h00 \n /start-19h15 \n /start-19h30 \n /start-19h45 \n /start-20h00 \n /start-20h15 \n /start-20h30 \n /start-20h45 \n /start-21h00 \n /start-21h15 \n /start-21h30 \n /start-21h45 \n /start-22h00 \n /start-22h15 \n /start-22h30 \n /start-22h45 \n /start-23h00 \n /start-23h15 \n /start-23h30 \n /start-23h45 \n /start-24h00")
+            .addField("__Staff Aide__" , "**Voici les commandes utile pour les __MovingZone__ !**\n /classement \n /start @MovingZone \n /start-18h00 @MovingZone \n /start-18h15 @MovingZone \n /start-18h30 @MovingZone \n /start-18h45 @MovingZone \n /start-19h00 @MovingZone \n /start-19h15 @MovingZone \n /start-19h30 \n /start-19h45 @MovingZone \n /start-20h00 @MovingZone \n /start-20h15 @MovingZone \n /start-20h30 @MovingZone \n /start-20h45 @MovingZone \n /start-21h00 @MovingZone \n /start-21h15 @MovingZone \n /start-21h30 @MovingZone \n /start-21h45 @MovingZone \n /start-22h00 @MovingZone \n /start-22h15 @MovingZone \n /start-22h30 @MovingZone \n /start-22h45 @MovingZone \n /start-23h00 @MovingZone \n /start-23h15 @MovingZone \n /start-23h30 @MovingZone \n /start-23h45 @MovingZone \n /start-24h00 @MovingZone")
             .setFooter("Copyright 2018 © OpTium eSport")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -345,7 +345,7 @@ bot.on('message', message => {
     if (message.content === prefix + `aide`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__Aide aux Joueurs__" , "Vous voulez savoir le classement en **MovingZone Ranked** \n      \n __**/**classement !__ \n      \n **/**OpTium \n      ")
+            .addField("__Aide aux Joueurs__" , "Vous voulez s'avoir le classement en **MovingZone Ranked** \n      \n __**/**classement !__ \n      \n **/**OpTium \n      ")
             .setFooter("Copyright 2018 © OpTium eSport")
         message.channel.sendEmbed(help_embed);
         //messagechannel
