@@ -18,6 +18,18 @@ bot.on('message', message => {
         console.log('bjr');
     
     }
+
+    if (message.content === "ça va ?"){
+        message.reply("Je vais bien merci !");
+        console.log('bjr');
+    
+    }
+
+    if (message.content === "Tu fais quoi ?"){
+        message.reply("Je suis actuellement entrain de consulter les commandes dans __**/**aide__ et __**/**OpTium__");
+        console.log('bjr');
+    
+    }
     
     if (message.content === prefix + `staff-commande`){
     if (message.member.hasPermission("MANAGE_MESSAGES"))
@@ -333,7 +345,7 @@ bot.on('message', message => {
     if (message.content === prefix + `aide`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__Aide aux Joueurs__" , "Vous voulez savoir le classement en **MovingZone Ranked** \n      \n __**/**classement !__ \n      \n **/**OpTium \n      ")
+            .addField("__Aide aux Joueurs__" , "Vous voulez s'avoir le classement en **MovingZone Ranked** \n      \n __**/**classement !__ \n      \n **/**OpTium \n      ")
             .setFooter("Copyright 2018 © OpTium eSport")
         message.channel.sendEmbed(help_embed);
         //messagechannel
