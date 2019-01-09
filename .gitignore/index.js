@@ -460,6 +460,17 @@ bot.on('message', message => {
     
     }
 
+    if (message.content === prefix + `SetPermissionNéo`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__Permission(s)__" , "Une __permission__ viens d'être ajouté à **Néo | L'AS DE PIQUE#0486**")
+            .setFooter("Copyright 2018 © Permission(s) Modée")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
 
 
     if (!message.content.startsWith(prefix)) return;
@@ -492,5 +503,37 @@ bot.on('message', message => {
         
         
      }
+
+     if (!message.content.startsWith(prefix)) return;
+
+     var args = message.content.substring(prefix.length).split(" ");
+ 
+     switch (args[0].toLowerCase()) {
+         case "efefefef":
+ 
+         var userCreateDate = message.author.createdAt.toString().split(" ");
+         var msauthor = message.author.id;
+ 
+         var stats_embed = new Discord.RichEmbed()
+ 
+         .setColor("#EC1016")
+         .setTitle(`Statistiques de l'utilisateur : ${message.author.username}`)
+         .addField(`Maintenance ...`, "C'est une commande en cours de développement juste l'id est envoyé !")
+         .addField(`ID de l'utilisateur :id:`, msauthor, true)
+         .setThumbnail(message.author.avatarURL)
+         message.author.send({embed : stats_embed});
+         break;
+                      //CLEAR
+                      case "setuserclear":
+                      if (message.member.hasPermission("SPEAK")){
+                          message.channel.fetchMessages()
+                              .then(function(list){
+                                  message.channel.bulkDelete(list);
+                              }, function(err){message.channel.send("Erreur")})}
+                      break;
+         
+         
+      }
+ 
 
 });
