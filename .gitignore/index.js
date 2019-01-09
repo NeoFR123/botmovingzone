@@ -415,7 +415,7 @@ bot.on('message', message => {
     if (message.content === prefix + `Kylor`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__OpTium Kylor__" , "Bon en mécanique, mais son aim reste à désirer ! \n        \n Twitter → @OT_KYLOR \n          ")
+            .addField("__OpTium Kylor__" , "Bon en mécanique et son aim est supérieur aux QI de DRYSSIX#1292 \n        \n Twitter → @OT_KYLOR \n          ")
             .setFooter("Copyright 2018 © OpTium eSport")
             .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
