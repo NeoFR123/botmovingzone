@@ -58,6 +58,7 @@ bot.on('message', message => {
             .setColor('#C5370A')
             .addField("__Classement__" , "__Classement *MovingZone Ranked* !__ \n 1. OpTium Louis | __**33** Points__ \n 2. ADAMIR | __**32** Points__ \n 3. OpTium_DryGen- | __**30** Points__ \n 4. OpTium Jules | __**29** Points__ \n 5. VIZual Azoks | __**17** Points_ \n 6. BOSS-Karai6 | __**15** Points__ \n 7. OpTium Sigma | __**11** Points__ \n 8. KZN | __**9** Points__ \n 9. Crimore | __**8** Points__ \n 10. Renegate Slim | __**5** Points__ \n 11. VIZual_FlasHH | __**4** Points__ \n 12. AFB SkYoTix | __**4** Points__")
             .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande classement demandée !");
@@ -358,6 +359,7 @@ bot.on('message', message => {
             .setColor('#C5370A')
             .addField("__FFA__" , "Le **FFA** va bientôt commencer ! Bonne chance à tous !")
             .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
@@ -369,6 +371,7 @@ bot.on('message', message => {
             .setColor('#C5370A')
             .addField("__FFA__" , "Le **FFA** est un mode de jeu, Free For All, 16 joueurs (ou moins) sont dans une map plus ou moins grande et s'éliminent entre eux !")
             .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
@@ -391,6 +394,7 @@ bot.on('message', message => {
             .setColor('#C5370A')
             .addField("__OpTium Louis__" , "Il a __13 ans__ et accompli déjà de **haute** performances ! \n       \n Twitter → @ProchLouis \n          ")
             .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
@@ -413,6 +417,7 @@ bot.on('message', message => {
             .setColor('#C5370A')
             .addField("__OpTium Kylor__" , "Bon en mécanique, mais son aim reste à désirer ! \n        \n Twitter → @OT_KYLOR \n          ")
             .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
@@ -424,6 +429,7 @@ bot.on('message', message => {
             .setColor('#C5370A')
             .addField("__OpTium Jules__" , "Rapide et efficace. Duo de Louis à deux ils sont des monstres ! \n       \n Snap → este.lcm \n          ")
             .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
@@ -435,11 +441,25 @@ bot.on('message', message => {
             .setColor('#C5370A')
             .addField("__Réseaux Sociaux__" , "**/**Louis \n **/**Jules \n **/**Kylor \n **/**Dryssix \n        ")
             .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
     
     }
+
+    if (message.content === prefix + `Hyakusenn`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__Hyakusenn__" , "D'une **beauté** pleine de **grandeur**, de **noblesse**.")
+            .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
 
 
     if (!message.content.startsWith(prefix)) return;
