@@ -386,7 +386,7 @@ bot.on('message', message => {
     if (message.content === prefix + `l'as de pique`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__L'AS DE PIQUE__" , "L'as de pique et une personne de **haute** importance pour le serveur vous le trouverez dans sa __taverne__ !")
+            .addField("__L'AS DE PIQUE__" , "L'as de pique et une personne de **haute** importance pour le serveur vous le trouverez dans sa __taverne__ ! \n #NéoLeBg")
             .setFooter("Copyright 2018 © OpTium eSport")
         message.channel.sendEmbed(help_embed);
         //messagechannel
