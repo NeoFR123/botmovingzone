@@ -8,7 +8,12 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: 'Assister la OpTium', type: 0} });
     console.log("En marche !");
 
-    });
+});
+
+bot.on('guildMemberAdd', member => {
+    bot.channels.get('518029455856238597').send(`__Bienvenue ${member} sur le discord de la **OpTium eSport**__`);
+});
+
 
 bot.login(process.env.TOKEN);
 
@@ -415,7 +420,7 @@ bot.on('message', message => {
     if (message.content === prefix + `Kylor`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__OpTium Kylor__" , "Bon en mecanique, mais son aim reste à désiré \n        \n Twitter → @OT_KYLOR \n          ")
+            .addField("__OpTium Kylor__" , "Bon en mécanique, mais son aim reste à désirer ! \n        \n Twitter → @OT_KYLOR \n          ")
             .setFooter("Copyright 2018 © OpTium eSport")
             .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
@@ -428,6 +433,18 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
             .addField("__OpTium Jules__" , "Rapide et efficace. Duo de Louis à deux ils sont des monstres ! \n       \n Snap → este.lcm \n          ")
+            .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
+    if (message.content === prefix + `TetrisL`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__OpTium Tetris__" , "Qualité d'une personne gentille.\n       \n Snap → este.lcm \n          ")
             .setFooter("Copyright 2018 © OpTium eSport")
             .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
@@ -470,6 +487,7 @@ bot.on('message', message => {
         console.log("Commande Help demandée !");
     
     }
+    
 
 
     if (!message.content.startsWith(prefix)) return;
