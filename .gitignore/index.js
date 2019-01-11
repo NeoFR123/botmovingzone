@@ -420,7 +420,19 @@ bot.on('message', message => {
     if (message.content === prefix + `Kylor`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__OpTium Kylor__" , "Bon en mécanique, mais son aim reste à désirer ! \n        \n Twitter → @OT_KYLOR \n          ")
+            .addField("__OpTium Kylor__" , "A 14 ans, il est déjà une star ! Wow !\n        \n Twitter → @OT_KYLOR \n          ")
+            .setFooter("Copyright 2018 © OpTium eSport")
+            .setThumbnail(message.author.avatarURL)
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+    
+        if (message.content === prefix + `Nexo`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__OpTium Nexo__" , "Bon en mécanique, mais son aim reste à désirer !\n        \n Snap → mensour_bg \n          ")
             .setFooter("Copyright 2018 © OpTium eSport")
             .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
