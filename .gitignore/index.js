@@ -394,17 +394,6 @@ bot.on('message', message => {
     
     }
 
-    if (message.content === prefix + `Louis`){
-        var help_embed = new Discord.RichEmbed()
-            .setColor('#C5370A')
-            .addField("__OpTium Louis__" , "Il a __13 ans__ et accompli déjà de **haute** performances ! \n       \n Twitter → @ProchLouis \n          ")
-            .setFooter("Copyright 2018 © OpTium eSport")
-            .setThumbnail(message.author.avatarURL)
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
-    
-    }
     
         if (message.content === prefix + `Dryssix`){
         var help_embed = new Discord.RichEmbed()
@@ -441,18 +430,6 @@ bot.on('message', message => {
     
     }
 
-    if (message.content === prefix + `Jules`){
-        var help_embed = new Discord.RichEmbed()
-            .setColor('#C5370A')
-            .addField("__OpTium Jules__" , "Rapide et efficace. Duo de Louis à deux ils sont des monstres ! \n       \n Snap → este.lcm \n          ")
-            .setFooter("Copyright 2018 © OpTium eSport")
-            .setThumbnail(message.author.avatarURL)
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
-    
-    }
-
     if (message.content === prefix + `TetrisL`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
@@ -468,7 +445,7 @@ bot.on('message', message => {
     if (message.content === prefix + `OpTium`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__Réseaux Sociaux__" , "**/**Louis \n **/**Jules \n **/**Kylor \n **/**Dryssix \n        ")
+            .addField("__Réseaux Sociaux__" , "**/**Kylor \n **/**Dryssix \n        ")
             .setFooter("Copyright 2018 © OpTium eSport")
             .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
