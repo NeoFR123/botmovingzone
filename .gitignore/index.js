@@ -430,18 +430,6 @@ bot.on('message', message => {
     
     }
 
-    if (message.content === prefix + `TetrisL`){
-        var help_embed = new Discord.RichEmbed()
-            .setColor('#C5370A')
-            .addField("__OpTium Tetris__" , "Qualité d'une personne gentille.\n       \n Snap → este.lcm \n          ")
-            .setFooter("Copyright 2018 © OpTium eSport")
-            .setThumbnail(message.author.avatarURL)
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
-    
-    }
-
     if (message.content === prefix + `OpTium`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
