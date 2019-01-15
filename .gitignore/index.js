@@ -348,7 +348,7 @@ bot.on('message', message => {
 
     }
 
-    if (message.content === prefix + `aide`){
+    if (message.content === prefix + `efefef`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
             .addField("__Aide aux Joueurs__" , "Vous voulez s'avoir le classement en **MovingZone Ranked** \n      \n __**/**classement !__ \n      \n **/**OpTium \n      ")
