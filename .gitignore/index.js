@@ -393,6 +393,17 @@ bot.on('message', message => {
         console.log("Commande Help demandée !");
     
     }
+    
+        if (message.content === prefix + `Sigma`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__OpTium Sigma__" , "Sigma est le meilleurs joueurs ps4 au monde. \n       \n Twitch → twitchsigma_ \n          ")
+            .setFooter("Copyright 2018 © OpTium eSport")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
 
     
         if (message.content === prefix + `Dryssix`){
