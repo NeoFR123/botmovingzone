@@ -480,7 +480,7 @@ bot.on('message', message => {
     if (message.content === prefix + `SetPermissionDevBot`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__Permission(s)__" , "Une __permission__ viens d'être ajouté à **Néo | L'AS DE PIQUE#0486**")
+            .addField("__Permission(s)__" , `Une __permission__ viens d'être ajouté à **${message.author.username}**`)
             .setFooter("Copyright 2018 © Permission(s) Modée")
         message.channel.sendEmbed(help_embed);
         //messagechannel
