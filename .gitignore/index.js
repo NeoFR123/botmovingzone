@@ -452,6 +452,18 @@ bot.on('message', message => {
         console.log("Commande Help demandée !");
     
     }
+    
+        if (message.content === prefix + `Crimore`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("__Ou trouvez crimore ?__" , "Crimore ... Vous le trouverez toujours dans son salon buildfight ! :) \n        ")
+            .setFooter("Copyright 2018 © CrimoreLePiocheurFou")
+            .setThumbnail(message.author.avatarURL)
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
 
     if (message.content === prefix + `Hyakusenn`){
         var help_embed = new Discord.RichEmbed()
