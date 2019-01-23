@@ -5,7 +5,7 @@ var bot = new Discord.Client();
 var prefix = ("/");
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: 'faire /OpTium', type: 0} });
+    bot.user.setPresence({ game: { name: 'Fortnite', type: 0} });
     console.log("En marche !");
 
 });
