@@ -477,11 +477,11 @@ bot.on('message', message => {
     
     }
 
-    if (message.content === prefix + `SetPermissionDevBot`){
+    if (message.content === prefix + `TR4KI`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__Permission(s)__" , `Une __permission__ viens d'être ajouté à **${message.author.username}**`)
-            .setFooter("Copyright 2018 © Permission(s) Modée")
+            .addField("PD" , `CETTE PERSONNE EST PD !`)
+            .setFooter("Copyright 2018 © PD LAND")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
