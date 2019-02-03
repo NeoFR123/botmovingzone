@@ -480,8 +480,8 @@ bot.on('message', message => {
     if (message.content === prefix + `TR4KI`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("PD" , `CETTE PERSONNE EST PD !`)
-            .setFooter("Copyright 2018 © PD LAND")
+            .addField("OpTium TR4KI" , `*Code Créateur* : **__OPTIUM TR4KI__**`)
+            .setFooter("Copyright 2018 © OpTium | Esport")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
